@@ -1,1 +1,1 @@
-This is the CV of Katharina Ephan made in HTML
+This is the CV of Katharina Ephan made in HTML and CSS
