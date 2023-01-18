@@ -9,6 +9,7 @@ body {
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: medium;
 }
 
 h1,
@@ -18,11 +19,10 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  font-size: large;
 }
 
-/*
-specific styling
-*/
+/*specific styling*/
 
 .header {
   padding: 60px 20px;
@@ -30,8 +30,51 @@ specific styling
   background-color: #e3e3e3;
 }
 
-.main {
+h1 {
+  font-size: x-large;
+}
+
+main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 50px;
+}
+
+main h2 {
+  padding: 20px;
+  font-size: large;
+}
+
+article + article {
+  border-top: 2px solid gray;
+}
+
+/* navigation */
+
+.header nav {
+  margin-block: 50px 20px;
+}
+
+.header nav a {
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  background-color: gray;
+  border-radius: 10px;
+  border: 3px solid #e3e3e3;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e3e3e3;
+}
+
+.header nav a:hover {
+  color: aquamarine;
+  border: 3px solid gray;
+}
+
+.header nav a:active {
+  color: black;
+  border-color: #e3e3e3;
 }
