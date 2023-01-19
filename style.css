@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -10,6 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: medium;
+  font-kerning: auto;
 }
 
 h1,
@@ -20,6 +25,8 @@ h5,
 h6 {
   font-weight: 700;
   font-size: large;
+  position: relative;
+  left: -10px;
 }
 
 /*specific styling*/
@@ -54,14 +61,28 @@ article + article {
   color: white;
 }
 
-.header p::after {
+.header h1 + p::after {
   content: "👋";
+}
+
+.header aside {
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  background-color: gray;
+  padding: 10px 50px 10px 50px;
+}
+
+.header aside p {
+  font-weight: 700;
+  font-size: x-large;
+  color: white;
 }
 
 /* navigation */
 
 .header nav {
-  margin-block: 50px 20px;
+  margin-block: 30px 5px;
 }
 
 .header nav a {
