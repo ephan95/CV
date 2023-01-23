@@ -111,10 +111,33 @@ article + article {
   }
 }
 
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .experience-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 /* navigation */
 
 .header nav {
   margin-block: 30px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .header nav {
+    flex-direction: row;
+  }
 }
 
 .header nav a {
@@ -125,7 +148,6 @@ article + article {
   border-radius: 10px;
   border: 3px solid #e3e3e3;
   text-decoration: none;
-  display: inline-block;
   width: 200px;
 }
 
