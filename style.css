@@ -4,6 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  --background-color: white;
+  --text-color: black;
+  --link-color: white;
+  --link-hover: aquamarine;
+  --background-header: #e3e3e3;
+  --background-footer: gray;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,12 +81,12 @@ main h3 {
 }
 
 article + article {
-  border-top: 2px solid gray;
+  border-top: 2px solid var(--background-footer);
 }
 
 *::selection {
   background-color: rgb(29, 29, 29);
-  color: white;
+  color: var(--link-color);
 }
 
 .header h1 + p::after {
@@ -92,7 +98,7 @@ article + article {
   display: block;
   top: 0px;
   right: 20px;
-  background-color: gray;
+  background-color: var(--background-footer);
   padding: 10px 50px 10px 50px;
 }
 
@@ -100,7 +106,7 @@ article + article {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5rem;
-  color: white;
+  color: var(--background-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -169,16 +175,16 @@ footer a {
 
 footer a:link {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   position: relative;
 }
 
 footer a:hover {
-  color: aquamarine;
+  color: var(--link-hover);
 }
 
 footer a:visited {
-  color: black;
+  color: var(--text-color);
 }
 
 footer h2 {
@@ -205,27 +211,24 @@ footer h2 {
   text-align: center;
   margin: 10px;
   padding: 10px;
-  background-color: gray;
+  background-color: var(--background-footer);
   border-radius: 10px;
   border: 3px solid transparent;
   text-decoration: none;
   width: 200px;
 }
 
-.header nav a:link {
-  color: #e3e3e3;
-}
-
+.header nav a:link,
 a:visited {
-  color: #e3e3e3;
+  color: var(--background-header);
 }
 
 .header nav a:hover {
-  color: aquamarine;
-  border-color: gray;
+  color: var(--link-hover);
+  border-color: var(--background-footer);
 }
 
 .header nav a:active {
-  color: black;
-  border-color: #e3e3e3;
+  color: var(--text-color);
+  border-color: var(--background-footer);
 }
