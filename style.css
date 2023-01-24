@@ -93,13 +93,14 @@ article + article {
   content: "👋";
 }
 
-.header aside {
+.hire-me {
   position: fixed;
   display: block;
   top: 0px;
   right: 20px;
   background-color: var(--background-footer);
   padding: 10px 50px 10px 50px;
+  transition: transform 0.2s;
 }
 
 .header aside p a {
@@ -107,6 +108,10 @@ article + article {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--background-color);
+}
+
+.header:hover .hire-me {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -216,6 +221,7 @@ footer h2 {
   border: 3px solid transparent;
   text-decoration: none;
   width: 200px;
+  transition: background-color 0.5s ease-out;
 }
 
 .header nav a:link,
@@ -225,7 +231,8 @@ a:visited {
 
 .header nav a:hover {
   color: var(--link-hover);
-  border-color: var(--background-footer);
+  border-color: rgb(99, 99, 99);
+  background-color: rgb(99, 99, 99);
 }
 
 .header nav a:active {
