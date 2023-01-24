@@ -50,7 +50,13 @@ header section {
 .header {
   padding: 60px 20px;
   text-align: center;
-  background-color: #e3e3e3;
+  background: rgb(227, 227, 227);
+  background: linear-gradient(
+    180deg,
+    rgba(227, 227, 227, 1) 0%,
+    rgba(227, 227, 227, 0.8323704481792717) 93%
+  );
+  /* box-shadow: 2px 12px 136px 35px rgba(140, 140, 140, 0.3); */
 }
 
 h1 {
@@ -83,13 +89,15 @@ article + article {
 
 .header aside {
   position: fixed;
+  display: block;
   top: 0px;
   right: 20px;
   background-color: gray;
   padding: 10px 50px 10px 50px;
 }
 
-.header aside p {
+.header aside p a {
+  text-decoration: none;
   font-weight: 700;
   font-size: 1.5rem;
   color: white;
@@ -128,7 +136,11 @@ article + article {
 /* Footer */
 
 .footer {
-  background-color: gray;
+  background: linear-gradient(
+    180deg,
+    rgba(128, 128, 128, 0.7763480392156863) 0%,
+    rgba(128, 128, 128, 1) 40%
+  );
   display: flex;
   justify-content: space-around;
   flex-direction: column;
